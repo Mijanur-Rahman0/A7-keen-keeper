@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="max-w-277.5 mx-auto">
+    <div className="max-w-277.5 mx-auto mb-8">
       <div className="mb-5 md:mb-8 text-center">
         <h2 className="text-5xl font-bold mb-3">
           Friends to keep close in your life
