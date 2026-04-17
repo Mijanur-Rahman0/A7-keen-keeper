@@ -8,6 +8,7 @@ import Timeline from './pages/timeline/Timeline.jsx';
 import Stats from './pages/stats/Stats.jsx';
 import Homepage from './pages/homepage/Homepage.jsx';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage.jsx';
+import FriendDetails from './pages/friendDetails/FriendDetails.jsx';
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     Component: RootLayout,
     children: [
       {index: true, Component: Homepage},
+      {path: '/:id', Component: FriendDetails},
       {path: 'timeline', Component: Timeline},
       {path: 'stats', Component: Stats},
       
