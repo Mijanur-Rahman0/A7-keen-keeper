@@ -3,9 +3,9 @@ import { Link } from "react-router";
 
 const FriendCard = ({ friend }) => {
   return (
-    <Link to={`/${friend.id}`} className="card bg-base-100 shadow-sm text-center">
+    <Link to={`/friend/${friend.id}`} className="card bg-base-100 shadow-md text-center p-2">
       <figure>
-        <img src={friend.picture} alt="Shoes" className="rounded-full" />
+        <img src={friend.picture} alt={friend.name} className="rounded-full" />
       </figure>
       <div className="card-body">
         <h2 className="text-3xl font-bold">{friend.name}</h2>
